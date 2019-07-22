@@ -1,0 +1,11 @@
+<h1 id="heading">Notes</h1>
+<div>
+  <input type="text" #note placeholder="Add Note..." name="addnotes" value="">
+  <button (click)='data.addNotes(note.value,1)'>Save</button>
+</div>
+<ul class="items">
+  <li *ngFor = 'let note of notes'>
+    <span class="editButton" (click)='editNotes(note.id1)'>Edit</span> &nbsp;
+    <span class="noteButton">{{note.datas}}</span>
+  </li>
+</ul>

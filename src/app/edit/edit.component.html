@@ -1,0 +1,10 @@
+<h1 id="heading">Edit Note</h1>
+<div *ngFor='let note of notes'>
+  <div *ngIf='note.id1 == notesId'>
+      <input #editedData type="text" [value]="note.datas" name="addnotes">
+      <div id="buttonId">
+          <button (click)='data.changeData(notesId,editedData.value)'>Save</button>
+          <button (click)='back()'>Back</button>
+        </div>
+    </div>
+</div>
