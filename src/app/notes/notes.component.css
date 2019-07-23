@@ -30,6 +30,7 @@ button{
     width: 400px;
     margin-top: 10px;
     border-radius: 5% ;
+    font-size: 23px;
 }
 .items li .editButton{
     background-color:#586776;
@@ -39,11 +40,23 @@ button{
     font-size: 20px;
     color: #ffffff;
 }
-.items li .noteButton{
-    font-size: 25px;
-    padding: 15px;
+
+.items li.enabled{
+background-color:#00bf68;
+color: white;
 }
 
-.items li .selected{
-    background-color:  rgb(56, 221, 56);
+.items li.enabled .listButton{
+    text-decoration: line-through;
 }
+
+.items li:hover {
+    color: #607D8B;
+    background-color: #DDD;
+    left: .1em;
+  }
+
+  .items li.enabled:hover {
+    background-color: #FF3031;
+    color: white;
+  }

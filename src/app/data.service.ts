@@ -6,18 +6,17 @@ export class DataService {
  public id = 0;
  public deleteId;
   constructor() { }
-  addNotes(datas,id1)
+  addNotes(datas,id1,isDone)
   {
     this.id += id1;
     id1 = this.id;
-   this.notes.push({id1,datas})
+   this.notes.push({id1,datas,isDone})
   }
-  changeData(id1,datas)
+  changeData(id1,datas,isDone)
   {
     this.deleteId = id1;
     this.deleteId -=1;
-    this.notes.splice(this.deleteId,1,{id1,datas});
-    console.log(id1,this.notes)
+    this.notes.splice(this.deleteId,1,{id1,datas,isDone});
   }
   getData()
   {
@@ -26,5 +25,6 @@ export class DataService {
   getNote(id){
       return this.notes[id];
   }
+  
   
 }

@@ -10,8 +10,9 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class NotesComponent implements OnInit {
  public notes =[];
  public sendData;
- public toggle = false;
-  constructor(private data : DataService,private router:Router,private route : ActivatedRoute) { }
+ public enable = true;
+ public disable = false;
+ constructor(private data : DataService,private router:Router,private route : ActivatedRoute) { }
 
   ngOnInit() {
     this.notes = this.data.getData();
@@ -22,6 +23,4 @@ export class NotesComponent implements OnInit {
     this.router.navigate(['edit',id],{relativeTo:this.route});
   }
   
-  
-
 }

@@ -10,7 +10,8 @@ import { DataService } from '../data.service';
 export class EditComponent implements OnInit {
 public notesId;
 public notes = [];
-
+public enable = true;
+public disable = false;
   constructor(private data:DataService,private route:ActivatedRoute,private router : Router) { }
   ngOnInit() {
    this.route.paramMap.subscribe((params : ParamMap)=>
