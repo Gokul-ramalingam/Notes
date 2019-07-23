@@ -50,12 +50,12 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-![image] (/src/assets/screenshots/one.png)
+![image] (Todo/src/assets/screenshots/one.png)
 
-![image] (/src/assets/screenshots/two.png)
+![image] (Todo/src/assets/screenshots/two.png)
 
-![image] (/src/assets/screenshots/three.png)
+![image] (Todo/src/assets/screenshots/three.png)
 
-![image] (/src/assets/screenshots/four.png)
+![image] (Todo/src/assets/screenshots/four.png)
 
-![image] (/src/assets/screenshots/five.png)
+![image] (Todo/src/assets/screenshots/five.png)
